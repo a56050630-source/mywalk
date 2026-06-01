@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>광주 서구 걷기 코스 안내</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; background-color: #f9f9f9; text-align: center; }
+        h1 { color: #333; }
+        .menu-container { margin-bottom: 30px; }
+        .menu-btn { padding: 12px 24px; margin: 5px; font-size: 16px; font-weight: bold; cursor: pointer; border: none; border-radius: 5px; background-color: #4CAF50; color: white; }
+        .content-box { display: none; background: white; padding: 20px; border-radius: 10px; box-shadow: 0px 4px 6px rgba(0,0,0,0.1); max-width: 500px; margin: 0 auto; text-align: left; }
+        .course-img { width: 100%; border-radius: 5px; margin-bottom: 15px; }
+        .info-title { font-size: 20px; font-weight: bold; margin-bottom: 15px; color: #2E7D32; border-bottom: 2px solid #2E7D32; padding-bottom: 5px; }
+        .info-item { font-size: 16px; margin: 8px 0; line-height: 1.5; }
+        .bold { font-weight: bold; color: #333; }
+    </style>
+</head>
+<body>
+
+    <h1>👟 광주 서구 걷기 코스</h1>
+    <p>원하는 공원을 누르면 상세 안내가 나옵니다.</p>
+
+    <div class="menu-container">
+        <button class="menu-btn" onclick="showCourse('sangmu')">상무시민공원</button>
+        <button class="menu-btn" onclick="showCourse('g518')">5.18기념공원</button>
+        <button class="menu-btn" onclick="showCourse('mareuk')">마륵근린공원</button>
+        <button class="menu-btn" onclick="showCourse('dongrim')">동림유적근린공원</button>
+        <button class="menu-btn" onclick="showCourse('matgoel')">맛고을어린이공원</button>
+    </div>
+
+    <div id="sangmu" class="content-box">
+        <img class="course-img" src="상무시민공원.jpg" alt="상무시민공원 지도">
+        <div class="info-title">상무시민공원 코스 정보</div>
+        <div class="info-item"><span class="bold">· 코스위치 :</span> (출발/도착)상무시민공원 ⇆ 치평동 감탄히어로(소통테마길)</div>
+        <div class="info-item"><span class="bold">· 거&nbsp;&nbsp;&nbsp;&nbsp;리 :</span> 왕복 3km</div>
+        <div class="info-item"><span class="bold">· 소요시간 :</span> 50분</div>
+        <div class="info-item"><span class="bold">· 세부특징 :</span> 도심속 녹지 공간을 활용한 주민소통 중심코스</div>
+    </div>
+
+    <div id="g518" class="content-box">
+        <img class="course-img" src="5.18기념공원.jpg" alt="5.18기념공원 지도">
+        <div class="info-title">5.18기념공원 코스 정보</div>
+        <div class="info-item"><span class="bold">· 코스위치 :</span> (출발/도착)무각사 입구 주차장</div>
+        <div class="info-item"><span class="bold">· 거&nbsp;&nbsp;&nbsp;&nbsp;리 :</span> 2회 순환 3km</div>
+        <div class="info-item"><span class="bold">· 소요시간 :</span> 50분</div>
+        <div class="info-item"><span class="bold">· 세부특징 :</span> 5.18 역사적 상징성 및 숲길 중심의 명상코스</div>
+    </div>
+
+    <div id="mareuk" class="content-box">
+        <img class="course-img" src="마륵근린공원.jpg" alt="마륵근린공원 지도">
+        <div class="info-title">마륵근린공원 코스 정보</div>
+        <div class="info-item"><span class="bold">· 코스위치 :</span> (출발/도착)마륵근린공원 일원</div>
+        <div class="info-item"><span class="bold">· 거&nbsp;&nbsp;&nbsp;&nbsp;리 :</span> 왕복 3km</div>
+        <div class="info-item"><span class="bold">· 소요시간 :</span> 50분</div>
+        <div class="info-item"><span class="bold">· 세부특징 :</span> 도심 공원 산책로 중심의 가족단위 친화코스</div>
+    </div>
+
+    <div id="dongrim" class="content-box">
+        <img class="course-img" src="동림유적근린공원.jpg" alt="동림유적근린공원 지도">
+        <div class="info-title">동림유적근린공원 코스 정보</div>
+        <div class="info-item"><span class="bold">· 코스위치 :</span> (출발/도착)동림유적근린공원 ⇆ 광암교 코스</div>
+        <div class="info-item"><span class="bold">· 거&nbsp;&nbsp;&nbsp;&nbsp;리 :</span> 왕복 3km</div>
+        <div class="info-item"><span class="bold">· 소요시간 :</span> 50분</div>
+        <div class="info-item"><span class="bold">· 세부특징 :</span> 광주천변 자연생태 및 유적지 연계 치유코스</div>
+    </div>
+
+    <div id="matgoel" class="content-box">
+        <img class="course-img" src="맛고을어린이공원.jpg" alt="맛고을어린이공원 지도">
+        <div class="info-title">맛고을어린이공원 코스 정보</div>
+        <div class="info-item"><span class="bold">· 코스위치 :</span> (출발/도착)맛고을어린이공원 ⇆ 광주학생독립운동기념탑 코스</div>
+        <div class="info-item"><span class="bold">· 거&nbsp;&nbsp;&nbsp;&nbsp;리 :</span> 왕복 3km</div>
+        <div class="info-item"><span class="bold">· 소요시간 :</span> 50분</div>
+        <div class="info-item"><span class="bold">· 세부특징 :</span> 지역역사자원 및 청년문화 거점 연계 코스</div>
+    </div>
+
+    <script>
+        function showCourse(courseId) {
+            // 모든 정보 상자를 우선 숨기기
+            var boxes = document.getElementsByClassName('content-box');
+            for (var i = 0; i < boxes.length; i++) {
+                boxes[i].style.display = 'none';
+            }
+            // 클릭한 공원의 정보 상자만 쏙 보여주기
+            document.getElementById(courseId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
